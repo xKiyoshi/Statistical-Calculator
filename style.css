@@ -1,0 +1,140 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Main container styling */
+.calculator-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #444;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #555;
+    text-align: left;
+}
+
+/* Input fields styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s ease;
+}
+
+/* Input hover effect */
+input:focus {
+    border-color: #888;
+    background-color: #f7f7f7;
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+/* Button active effect */
+button:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+}
+
+/* Output section styling */
+.output {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Output text styling */
+.output h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: center;
+}
+
+.output p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #555;
+    text-align: center;
+}
+
+/* Small adjustments for responsiveness */
+@media (max-width: 480px) {
+    .calculator-container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+
+    .output {
+        padding: 15px;
+    }
+}
